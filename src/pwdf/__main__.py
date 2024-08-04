@@ -1,26 +1,13 @@
-#!/usr/bin/python
+from . import pwdf
 
 
-USAGE_MESSAGE = "Usage: pwdf <file>"
+def run_pwdf():
+    pwdf.run()
 
 
-def run():
-    if len(argv) != 2:
-        print(USAGE_MESSAGE)
-        return
+# python -m build
+# pip install dist/pwdf-0.0.1-py2.py3-none-any.whl --force-reinstall
+# python -m pwdf
 
-    file_path = argv[1]
-    if not path.isfile(file_path):
-        print("ERROR: The file specified could not be found.")
-        print(USAGE_MESSAGE)
-        return
+# python -m build && pip install dist/pwdf-0.0.1-py2.py3-none-any.whl --force-reinstall
 
-    abs_path = path.abspath(file_path)
-    print(abs_path)
-
-
-if __name__ == "__main__":
-    from sys import argv
-    from os import path
-
-    run()
