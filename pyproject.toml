@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pwdf"
+version = "0.0.1"
+authors = [
+    { name="Ryan Stewart" }
+]
+description = "A terminal command (Python module) to get the path of a file (pwd for files instead of directories)."
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/rynstwrt/pwdf"
