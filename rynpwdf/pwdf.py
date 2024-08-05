@@ -2,7 +2,7 @@ from sys import argv
 from os import path
 
 
-USAGE_MESSAGE = "Usage: rynpwdf <file>"
+USAGE_MESSAGE = "Usage: pwdf <file>"
 
 
 def run():
