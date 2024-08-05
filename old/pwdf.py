@@ -2,7 +2,7 @@
 # from os import path
 #
 #
-# USAGE_MESSAGE = "Usage: pwdf <file>"
+# USAGE_MESSAGE = "Usage: rynpwdf <file>"
 #
 #
 # def run():

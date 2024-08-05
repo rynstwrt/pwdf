@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 setup(
@@ -7,9 +7,10 @@ setup(
     description='A terminal command (Python module) to get the path of a file (pwd for files instead of directories).',
     url='https://github.com/rynstwrt/pwdf',
     author='Ryan Stewart',
-    packages=['pwdf'],
-    # scripts=['bin/runner']
+    packages=find_packages(),
     entry_points={
-        'console_scripts': ['pwdf=pwdf.cmd_line:main'],
+        'console_scripts': [
+            'pwdf=rynpwdf.pwdf:run'
+        ]
     },
 )
