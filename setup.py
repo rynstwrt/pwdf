@@ -8,7 +8,8 @@ setup(
     url='https://github.com/rynstwrt/pwdf',
     author='Ryan Stewart',
     packages=['pwdf'],
+    # scripts=['bin/runner']
     entry_points={
-        'console_scripts': ['deep_translator=deep_translator.__main__:run_pwdf'],
-    }
+        'console_scripts': ['pwdf=pwdf.cmd_line:main'],
+    },
 )
