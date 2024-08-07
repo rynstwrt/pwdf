@@ -4,6 +4,8 @@
 <br>
 
 ## Building and Installing
+**Create a dynamic package for development: `python setup.py develop`**
+
 **Test install:** `python setup.py install`
 
 **Build distributions:** `python setup.py sdist bdist_wheel`
